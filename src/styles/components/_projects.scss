@@ -1,0 +1,119 @@
+.projects{
+    background-color: $background;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    width: 100%;
+    height: 100%;
+
+    .arrow{
+        color: black;
+        height: 50px;
+        position: absolute;
+        cursor: pointer;
+
+        &.left{
+            left: 10px;
+            transform: rotate(-180deg);
+        }
+        &.right{
+            right: 10px;
+        }
+    }
+
+    .slider{
+        
+        height: 300px;
+        display: flex;
+        position: absolute;
+        left: -0%;
+        // transform: translateX(-100%);
+
+        transition: all 1s ease;
+
+        .container{
+            width: 50vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .item{
+                width: 75vh;
+                height: 100%;
+                background-color: $background;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .projects__left{
+                    flex: 4;
+                    display: flex;
+                    height: 85%;
+                    align-items: center;
+                    justify-content: center ;
+                    background-color: $circle-color;
+                    border-radius: 20px;
+                    
+                    .projects__left-container{
+
+                        width: 90%;
+                        height: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        color: $soft-white;
+
+                        .projects__img-lcontainer{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-color: $background;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            img {
+                                width: 25px;
+                            }
+                        }
+                        h2{
+                        
+                            font-size: 24px;
+                        }
+                        p{
+                            font-size: 12px;
+                        }
+                        span{
+                            font-size: 12px;
+                            font-weight: 300;
+                            text-decoration: underline;
+                        }
+                    }
+                    
+                }
+                .projects__right{
+
+                    flex: 8;
+                    background-color: $background;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+
+                    img {
+                        width: 400px;
+                        transform: rotate(-10deg);
+
+                    }
+                    
+                }
+            }
+        }
+
+    }
+}
+

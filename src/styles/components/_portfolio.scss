@@ -1,0 +1,26 @@
+.portfolio{
+    // background-color: $circle-color;
+    display: flex;
+    position: relative;
+
+    
+    .portfolio__left{
+        flex: 0.5;
+        // background-color: $footer;
+
+        h1{
+            // align-items: center;
+            margin-left: 15%;
+            margin-top: 2.5%;
+            justify-content: end;
+            position: absolute;
+            font-size: 40px;
+            z-index: 30;
+        }
+    }
+
+    .portfolio__right{
+        flex:0.5;
+        background-color: $footer;
+    }
+}

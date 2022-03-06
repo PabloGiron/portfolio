@@ -1,8 +1,10 @@
+import { Waves } from "./Waves"
+
 
 export const Contact = () => {
   return (
-    <div className="contact" id="contact">
-
+    <div id="contact" >
+      <Waves/>
     </div>
   )
 }

@@ -4,7 +4,7 @@ $dark-grey: #363636;
 $light-grey: #e6e6e6;
 $primary: #5c8bc0;
 $secondary: #394a7e;
-$secondary-dark: #1e2743;
+$secondary-dark: #13334C;
 $circle-color: #005792;
 $footer: #FD5F00;
 
@@ -13,3 +13,14 @@ $white: #fff;
 $soft-white: #F9F7F7;
 $google-blue: #4285f4;
 $button-active-blue: #1669f2;
+
+// Colores para la main bar
+$bg-topbar: #242526;
+$bg-accent: #484a4d;
+$text-color: #dadce1;
+$nav-size: 70px;
+$border: 1px solid #474a4d;
+$border-radius: 8px;
+$speed: 500ms;
+$circle-background: #484a4d;
+$button-size: calc($nav-size * 0.5);

@@ -5,7 +5,7 @@ import "./styles/styles.scss"
 
 ReactDOM.render(
   <React.StrictMode>
-    <PortfolioApp />
+     <PortfolioApp />
   </React.StrictMode>,
   document.getElementById('root')
 );

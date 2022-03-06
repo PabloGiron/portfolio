@@ -1,5 +1,4 @@
-import{ AssignmentIndSharp, Mail } from "@material-ui/icons"
-
+import{ AssignmentIndSharp, Mail, GitHub, LinkedIn } from "@material-ui/icons"
 
 export const Topbar = ({ menuOpen, setmenuOpen }) => {
   return (
@@ -7,7 +6,18 @@ export const Topbar = ({ menuOpen, setmenuOpen }) => {
       <div className="wrapper">
 
         <div className="topbar__left ">
-          <a href="#intro" className="logo"> Logo</a>
+          <a href="#intro" className="logo"> <img  className="topbar__image" src="assets/zorro.png" alt="" /></a>
+          
+          <div className="itemContainer">
+            <LinkedIn className="icon"/>
+            <span>Pablo Giron</span>
+
+          </div>
+          <div className="itemContainer">
+            <GitHub className="icon"/>
+            <span>PabloGiron</span>
+
+          </div>
           <div className="itemContainer">
             <AssignmentIndSharp className="icon"/>
             <span>+502 4856 5452</span>
