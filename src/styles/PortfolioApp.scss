@@ -1,40 +1,58 @@
-.app{
-    height: 100vh;
+.portfolio-app{
+
+    
+
+    .bar{
+        width: 100vw;
+        z-index: 100;
+        position: fixed;
+        background-color: aquamarine;
+        overflow-x: visible;
+        // height: 0px;
+        // top: 0;
+    }
+
+    .app{
+
+        height: 100vh;
 
 
-    .sections{
-        width: 100%;
-        height: calc( 100vh - 70px );
-        background-color: $background;
-        position: relative;
-        top: 70px;
-
-        scroll-behavior: smooth;
-        scroll-snap-type: y mandatory;
         
-        > *{
-            height: calc(100vh - 70px);
-            scroll-snap-align: start;
-            width: 100vw;
+        .sections{
+            width: 100%;
+            height: calc( 100vh - 70px);
+            background-color: $background;
+            position: relative;
+            top: 70px;
 
+            scroll-behavior: smooth;
+            scroll-snap-type: y mandatory;
             
-        }
-        &::-webkit-scrollbar {
-            -webkit-appearance: none;
-            background-color: #ccc;
-        }
-     
-        &::-webkit-scrollbar:vertical {
-            width: 7.5px;
-        }
-     
-        &::-webkit-scrollbar:horizontal {
-            height: 5spx;
-        }
-     
-        &::-webkit-scrollbar-thumb {
-            background-color: $dark-grey;
-            border-radius:450px;
+            > *{
+
+                height: calc(100vh - 70px);
+                scroll-snap-align: start;
+                width: 100vw;
+
+                
+            }
+            &::-webkit-scrollbar {
+                -webkit-appearance: none;
+                background-color: #ccc;
+            }
+        
+            &::-webkit-scrollbar:vertical {
+                width: 7.5px;
+            }
+        
+            &::-webkit-scrollbar:horizontal {
+                height: 5spx;
+            }
+        
+            &::-webkit-scrollbar-thumb {
+                background-color: $dark-grey;
+                border-radius:450px;
+            }
         }
     }
 }

@@ -2,11 +2,13 @@
 .waves{
 
     position: relative;
+    background-color: $footer;
+    // z-index: 50;a
     .waves_bg-color{
         width: 100%;
         height: 70%;
         background: $circle-color;
-        position: relative;
+        position: absolute;
         top: 0;
     }
 
@@ -23,7 +25,8 @@
     }
 
     .w1{
-        animation: w1 150s linear infinite;
+        position: absolute;
+        animation: w1 100s linear infinite;
     }
 
     @keyframes w1 {
@@ -33,6 +36,31 @@
         100%{
             margin-left: -1399px;
         }
+    }
+
+    .wave__body{
+        color: $soft-white;
+        position: absolute;
+        // z-index: 2;
+
+        h1{
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        .wave__list{
+            list-style: square inside;
+            font-size: 23px;
+        }
+    }
+
+    .container{
+        top: 5%;
+        left: 20%;
+        right: 20%;
     }
 }
 

@@ -41,6 +41,9 @@ export const Projects = () => {
 
   return (
     <div className='projects'>
+
+      <h1>Mis proyectos:</h1>
+      
       <div className='slider' 
            style={ {transform:`translateX(-${currentSlide * 25}%)`} }
       >

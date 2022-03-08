@@ -3,7 +3,7 @@ export default function Menu({ menuOpen, setmenuOpen }) {
 
 
   return (
-    <div className={"menu " + (menuOpen && "active")}>
+    <div className={"menu__menu " + (menuOpen && "active")}>
         <ul>
             <li onClick={()=> setmenuOpen(!menuOpen)}>
                 <a href="#intro"> Intro </a>

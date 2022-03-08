@@ -10,20 +10,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    overflow-y: hidden;
+
+}
+
+.card__image{
+    height: 90px;
+    width: 90px;
 }
 
 
 /* square buttons */
 .rec.rec-arrow {
-    border-radius: 0;
-    color: $white;
     border-radius: 50%;
+    outline: none;
+    box-shadow: none;
 }
-/* round buttons on hover */
-.rec.rec-arrow:hover {
-    border-radius: 50%;
-    background-color: black;
-}
+
 /* hide disabled buttons */
 .rec.rec-arrow:disabled {
     visibility: hidden;
@@ -36,21 +40,24 @@
 
 button.rec-dot{
     background-color: $background;
-    box-shadow: $circle-color;
+    // box-shadow: $circle-color;
 
     &:hover,&:active,&:focus{
         background-color: $circle-color;
-        box-shadow: $background;
 
     }
 }
   
 button.rec.rec-arrow  {
 
+    background-color: rgba(0, 128, 0, 0);
+    // outline: 4px solid $background;
     &:hover,&:active,&:focus{
         background-color: $circle-color;
-        box-shadow: $background;
+        box-shadow: none;
 
     }
 
 }
+
+

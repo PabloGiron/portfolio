@@ -4,9 +4,7 @@ import PortfolioApp from './PortfolioApp';
 import "./styles/styles.scss"
 
 ReactDOM.render(
-  <React.StrictMode>
-     <PortfolioApp />
-  </React.StrictMode>,
+  <PortfolioApp/>,
   document.getElementById('root')
 );
 
