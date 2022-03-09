@@ -2,19 +2,18 @@ import React, { useEffect, useRef, useState } from 'react'
 import { CSSTransition } from 'react-transition-group';
 import { ReactComponent as ArrowIcon} from '../../icons/arrow.svg';
 import { ReactComponent as CaretIcon} from '../../icons/caret.svg';
-import { ReactComponent as CogIcon} from '../../icons/cog.svg';
 import { ReactComponent as ChevronIcon} from '../../icons/chevron.svg';
-import{ Person, Work } from "@material-ui/icons"
+import{ Person, Work, Home, AccountTree, LinkedIn, GitHub, Link } from "@material-ui/icons"
 
 
 export const Hotbar = () => {
   return (
     <Navbar>
-      <NavItem name={"intro"} icon={ <Person />}  />
-      <NavItem name={"portfolio"}  icon={ <Work /> }/>
-      <NavItem icon="😀"/>
+      <NavItem name={"#intro"} icon={ <Home />}  />
+      <NavItem name={"#about"} icon={ <Person />}  />
+      <NavItem name={"#portfolio"}  icon={ <Work /> }/>
       
-      <NavItem icon = {< CaretIcon/>}>
+      <NavItem name={"#"} icon = {< CaretIcon/>}>
       
       {/* Dropdown here  */}
       <DropdownMenu />
@@ -43,7 +42,7 @@ function DropdownMenu(){
 
   function DropdownItem(props){
     return(
-      <a href={`#${props.refName}`} className='menu-item' onClick={() => props.goToMenu && setactiveMenu(props.goToMenu)}>
+      <a href={`${props.refName}`} target={`${props.target}`} className='menu-item' onClick={() => props.goToMenu && setactiveMenu(props.goToMenu)}>
 
         <span className='icon-button'>{props.leftIcon}</span>
         
@@ -70,13 +69,14 @@ function DropdownMenu(){
         <div className='menu'>
 
 
-          <DropdownItem>My Profile</DropdownItem>
           <DropdownItem
-            leftIcon={<CogIcon />}
+            leftIcon={<AccountTree />}
             rightIcon={<ChevronIcon />}
             goToMenu='settings'
+            refName = '#'
+            target = '_self'
           >
-            Settings
+            Redes sociales
           </DropdownItem>
         </div>
       </CSSTransition>
@@ -91,16 +91,12 @@ function DropdownMenu(){
 
         <div className='menu'>
 
-        <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />}>
-            <h3 style={{ margin: 6}}>Redes</h3>
+        <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />} refName="#" target = '_self'>
+            <h3 style={{ margin: 6}}>Regresar</h3>
         </DropdownItem>
-        <DropdownItem leftIcon="🦘"><a href='Facebook.com'>Facebbok</a></DropdownItem>
-        <DropdownItem>Settings</DropdownItem>
-        <DropdownItem>Settings</DropdownItem>
-        <DropdownItem>Settings</DropdownItem>
-        <DropdownItem>Settings</DropdownItem>
-        <DropdownItem>Settings</DropdownItem>
-        <DropdownItem>Settings</DropdownItem>
+        <DropdownItem leftIcon={<LinkedIn/>} refName="https://www.linkedin.com/in/juan-pablo-gir%C3%B3n-l%C3%B3pez-7362b2224/" target="_blank">LinkedIn</DropdownItem>
+        <DropdownItem leftIcon={<Link/>} refName="https://www.udemy.com/user/juan-pablo-giron-3/" target="_blank">Udemy</DropdownItem>
+        <DropdownItem leftIcon={<GitHub/>} refName="https://www.Github.com/PabloGiron" target="_blank">Github</DropdownItem>
         </div>
       </CSSTransition>
 
@@ -122,7 +118,7 @@ function NavItem( props ){
 
   return(
     <li className='nav-item'>
-        <a href={`#${props.name}`} className='icon-button' onClick={ () => setOpen( !open )}>
+        <a href={`${props.name}`} className='icon-button' onClick={ () => setOpen( !open )}>
           { props.icon }
         </a>
         

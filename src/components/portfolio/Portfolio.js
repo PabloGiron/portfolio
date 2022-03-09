@@ -13,7 +13,7 @@ export const Portfolio = () => {
       </div>
       <div className='portfolio__right'>
         <div className='portfolio__right-area'>
-          <h1>My skills:</h1>
+          <h1>Mis skills:</h1>
           <Skills/>
           <h1>Mis hobbies:</h1>
           <Hobbies/>

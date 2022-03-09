@@ -23,6 +23,7 @@
     .portfolio__right{
         flex:0.5;
         // background-color: $footer;
+        overflow: hidden;
 
         .portfolio__right-area{
             width: 100%;

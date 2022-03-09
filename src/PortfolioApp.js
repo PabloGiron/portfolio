@@ -1,9 +1,8 @@
-import { Contact } from "./components/contact/Contact";
 import { Intro } from "./components/intro/Intro";
 import { Portfolio } from "./components/portfolio/Portfolio";
-
-import { Waves } from "./components/contact/Waves";
 import { Hotbar } from "./components/hotbar/Hotbar";
+import { About } from "./components/contact/About";
+
 
 function PortfolioApp() {
 
@@ -19,9 +18,8 @@ function PortfolioApp() {
       <div className="app" >
         <div className="sections">
           <Intro/>
-          <Waves/>
+          <About/>
           <Portfolio/>
-          {/* <Contact/> */}
         </div>
       </div>
     </div>

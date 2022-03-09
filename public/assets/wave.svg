@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg id="master-artboard" viewBox="0 0 1398.869140625 201.99549865722656" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" style="enable-background:new 0 0 336 235.2;" width="1398.869140625px" height="201.99549865722656px"><rect id="ee-background" x="0" y="0" width="1398.869140625" height="201.99549865722656" style="fill: white; fill-opacity: 0; pointer-events: none;"/><defs><clipPath id="clip0">
-<path d="M 0 0 H 1600 V 600 H 0 V 0 Z" fill="white"/>
-</clipPath></defs><g transform="matrix(0.875, 0, 0, 0.875, -1.130816102027893, 12.111122131347656)"><g clip-path="url(#clip0)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1600 76.9996C1289 76.9996 1190.1 198.25 789 198C389 198 289 76.9996 0 76.9996V-0.00038147H1600C1600 -0.00038147 1600 47.9996 1600 76.9996Z" fill="#2196F3" style="stroke-opacity: 1; fill-opacity: 1; fill: rgb(0, 87, 146);"/>
-</g></g></svg>
+<svg id="master-artboard" viewBox="0 0 1398.869140625 201.99549865722656" version="1.1" x="0px" y="0px" style="enable-background:new 0 0 336 235.2;" width="1398.869140625px" height="201.99549865722656px" xmlns="http://www.w3.org/2000/svg">
+  <rect id="ee-background" x="0" y="0" width="1398.869140625" height="201.99549865722656" style="fill: white; fill-opacity: 0; pointer-events: none;"/>
+  <defs>
+    <clipPath id="clip0">
+      <path d="M 0 0 H 1600 V 600 H 0 V 0 Z" fill="white"/>
+    </clipPath>
+  </defs>
+  <g transform="matrix(0.875, 0, 0, 0.875, -1.130816102027893, 12.111122131347656)">
+    <g clip-path="url(#clip0)">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M1600 76.9996C1289 76.9996 1190.1 198.25 789 198C389 198 289 76.9996 0 76.9996V-0.00038147H1600C1600 -0.00038147 1600 47.9996 1600 76.9996Z" style="stroke-opacity: 1; fill-opacity: 1; fill: rgb(0, 87, 146);" fill="#2196F3"/>
+    </g>
+  </g>
+</svg>
