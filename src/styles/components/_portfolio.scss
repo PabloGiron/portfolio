@@ -3,6 +3,12 @@
     display: flex;
     position: relative;
 
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
     
     .portfolio__left{
         flex: 0.5;
@@ -11,11 +17,15 @@
         h1{
             // align-items: center;
             // left: 25%;
-            top: 15%;
+            top: 3.5vh;
             // transform: translate(-25%,-25%);
             position: absolute;
             font-size: 40px;
             z-index: 30;
+            @include mobile{
+                top: 1vh;
+                
+            }
             // background-color: $footer;
         }
     }
@@ -24,6 +34,8 @@
         flex:0.5;
         // background-color: $footer;
         overflow: hidden;
+
+        
 
         .portfolio__right-area{
             width: 100%;
@@ -41,3 +53,5 @@
         }
     }
 }
+
+

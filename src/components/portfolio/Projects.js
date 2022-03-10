@@ -19,10 +19,10 @@ export const Projects = () => {
       img:"assets/proTech.png"
     },{
       id: "3",
-      icon: "/assets/globe.png",
-      title: "Pro-tech Web 2",
-      desc: "Página web para un e-commerce.",
-      img:"assets/proTech.png"
+      icon: "/assets/mobile.png",
+      title: "Cartelera App",
+      desc: "Aplicación para consultar cuales son las últimas películas.",
+      img:"assets/movies.png"
     },{
       id: "4",
       icon: "/assets/globe.png",

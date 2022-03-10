@@ -24,3 +24,13 @@ $border-radius: 8px;
 $speed: 500ms;
 $circle-background: #18405f;
 $button-size: calc($nav-size * 0.5);
+
+
+//Responsive
+$responsive-width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$responsive-width}){
+        @content
+    }
+}

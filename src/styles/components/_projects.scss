@@ -12,6 +12,9 @@
     width: 100%;
     height: 100%;
 
+   
+ 
+
     .arrow{
         color: black;
         height: 50px;
@@ -35,6 +38,16 @@
         left: -0%;
         // transform: translateX(-100%);
 
+        @include mobile{
+            // background-color: red;
+            height: 100%;
+            bottom: 1px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
         transition: all 1s ease;
 
         .container{
@@ -42,6 +55,15 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include mobile{
+                // background-color: green;
+                width: 100vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
 
             .item{
                 width: 75vh;
@@ -112,8 +134,9 @@
                     overflow: hidden;
 
                     img {
+                        
                         width: 400px;
-                        // transform: rotate(-10deg);
+                        transform: rotate(-10deg);
 
                     }
                     
@@ -124,3 +147,30 @@
     }
 }
 
+@media (max-width: 1299px) and (min-width: 1px){
+    .projects{
+        // flex-direction: column;
+        // background-color: red;
+        .arrow{
+            color: black;
+            height: 7.5%;
+            position: absolute;
+            cursor: pointer;
+    
+            &.left{
+                left: 10px;
+                bottom: 15%;
+                transform: rotate(-180deg);
+            }
+            &.right{
+                right: 10px;
+                bottom: 15%;
+            }
+        }
+
+        .container{
+            // background-color: red;
+            margin-right: 2px;
+        }
+    }
+}

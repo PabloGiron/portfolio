@@ -9,8 +9,9 @@ export const About = () => {
       <div className='wave__body container'>
 
         <h1> Acerca de mi:</h1>
+        <br/>
         <p> Ingeniero en sistemas e informática, graduado de la Universidad Rafael Landívar. Entusiasta por las nuevas tecnologías y el continuo aprendizaje, un pequeño resumen acerca de mi: </p>
-
+        <br/>
           <ul className='wave__list'>
             
             <li>Inicié en el mundo del programación en 2015.</li>
