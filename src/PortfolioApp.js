@@ -2,6 +2,7 @@ import { Intro } from "./components/intro/Intro";
 import { Portfolio } from "./components/portfolio/Portfolio";
 import { Hotbar } from "./components/hotbar/Hotbar";
 import { About } from "./components/contact/About";
+import { Contact } from "./components/contact/Contact";
 
 
 function PortfolioApp() {
@@ -20,6 +21,7 @@ function PortfolioApp() {
           <Intro/>
           <About/>
           <Portfolio/>
+          {/* <Contact/> */}
         </div>
       </div>
     </div>

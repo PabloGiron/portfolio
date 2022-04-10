@@ -18,7 +18,7 @@ export const Hobbies = () => {
             <Card name={"Fútbol"} image={"./assets/hobbies/futbol.png"} />
             <Card name={"Ajedrez"} image={"./assets/hobbies/ajedrez.png"} />
             <Card name={"Videojuegos"} image={"./assets/hobbies/videojuegos.png"} />
-            <Card name={"Pixelart"} image={"./assets/hobbies/pixelArt.png"} />
+            <Card name={"Pixelart"} image={"./assets/hobbies/foxSprite.png"} />
             <Card name={"Dibujar"} image={"./assets/hobbies/dibujar.png"} />
         </Carousel>
     </div>
