@@ -21,7 +21,7 @@ export const Intro = () => {
     <div className='intro' id="intro">
       <div className="intro__left">
         <div className="intro__imageContainer">
-          <img src="assets/man.png" alt="" />
+          <img src="assets/foto.png" alt="" />
         </div>
       </div>
       <div className="intro__right">
@@ -30,9 +30,17 @@ export const Intro = () => {
           <h1>Pablo Girón</h1>
           <h3> {" "} 
           <span ref={textRef}>  </span>
+          
           </h3>
+          <br/>
+          <a  href='https://drive.google.com/drive/folders/10fNn-m45qcu4Hic5fZbK6IdbOUGu6RMS?usp=sharing' rel='noreferrer' target="_blank">
+            <button className='btn_awards'>Diplomas</button>
+          </a>
+          <div className='middle'>
+
+          </div>
         </div>
-        <a href="#portfolio" className="btn" > 
+        <a href="#about" className=" intro_button" > 
           <img src="assets/down.png" alt="" />
         </a>
       </div>

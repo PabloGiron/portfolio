@@ -3,7 +3,7 @@ import { CSSTransition } from 'react-transition-group';
 import { ReactComponent as ArrowIcon} from '../../icons/arrow.svg';
 import { ReactComponent as CaretIcon} from '../../icons/caret.svg';
 import { ReactComponent as ChevronIcon} from '../../icons/chevron.svg';
-import{ Person, Work, Home, AccountTree, LinkedIn, GitHub, Link } from "@material-ui/icons"
+import{ Person, Work, Home, AccountTree, LinkedIn, GitHub, Link, School } from "@material-ui/icons"
 
 
 export const Hotbar = () => {
@@ -94,9 +94,10 @@ function DropdownMenu(){
         <DropdownItem goToMenu="main" leftIcon={<ArrowIcon />} refName="#" target = '_self'>
             <h3 style={{ margin: 6}}>Regresar</h3>
         </DropdownItem>
-        <DropdownItem leftIcon={<LinkedIn/>} refName="https://www.linkedin.com/in/juan-pablo-gir%C3%B3n-l%C3%B3pez-7362b2224/" target="_blank">LinkedIn</DropdownItem>
-        <DropdownItem leftIcon={<Link/>} refName="https://www.udemy.com/user/juan-pablo-giron-3/" target="_blank">Udemy</DropdownItem>
-        <DropdownItem leftIcon={<GitHub/>} refName="https://www.Github.com/PabloGiron" target="_blank">Github</DropdownItem>
+        <DropdownItem leftIcon={<LinkedIn/>} refName="https://www.linkedin.com/in/juan-pablo-gir%C3%B3n-l%C3%B3pez-7362b2224/" target="_blank"> LinkedIn</DropdownItem>
+        <DropdownItem leftIcon={<Link/>} refName="https://www.udemy.com/user/juan-pablo-giron-3/" target="_blank"> Udemy</DropdownItem>
+        <DropdownItem leftIcon={<GitHub/>} refName="https://www.Github.com/PabloGiron" target="_blank"> Github</DropdownItem>
+        <DropdownItem leftIcon={<School/>} refName="https://platzi.com/p/pablo.giron.97/" target="_blank"> Platzi</DropdownItem>
         </div>
       </CSSTransition>
 
