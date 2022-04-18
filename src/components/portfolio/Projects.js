@@ -7,28 +7,28 @@ export const Projects = () => {
   const data = [
     {
       id: "1",
-      icon: "/assets/mobile.png",
+      icon: "assets/mobile.png",
       title: "Paladins App",
       desc: "Paladins app es una aplicación la cual mostrará un resumen del perfil de un jugador.",
       img:"assets/paladinsApp.png",
       url:"https://github.com/PabloGiron/paladins_app"
     },{
       id: "2",
-      icon: "/assets/globe.png",
+      icon: "assets/globe.png",
       title: "Pro-tech Web",
       desc: "Página web para un e-commerce.",
       img:"assets/proTech.png",
       url:"https://github.com/EddyFelipe/paginaweb"
     },{
       id: "3",
-      icon: "/assets/mobile.png",
+      icon: "assets/mobile.png",
       title: "Cartelera App",
       desc: "Aplicación para consultar cuales son las últimas películas.",
       img:"assets/movies.png",
       url:"https://github.com/PabloGiron/Peliculas_V2"
     },{
       id: "4",
-      icon: "/assets/globe.png",
+      icon: "assets/globe.png",
       title: "Cafetería API",
       desc: "Backend diseñado para una cafetería creada con MongoDB y NodeJs.",
       img:"assets/node-js.png",
